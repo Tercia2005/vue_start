@@ -24,12 +24,23 @@
 </form>
 
     </template>
+
+    <script>
+    
+
+    export default{
+      
+    }
+  
+    </script>
     
 
 <style>
 section{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+
+    background-color: blue;
 }
 
     
