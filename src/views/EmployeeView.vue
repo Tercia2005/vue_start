@@ -12,7 +12,7 @@
   <div class="mb-3 input">
     <br>
     <label for="dateforleave" class="form-label" >Dates: </label>
-    <input type="date" class="date" id="dateforleave" placeholder="YY-MM-DD">
+    <input type="text" class="text" id="dateforleave" placeholder="YY-MM-DD">
     
     
 </div>
@@ -41,27 +41,66 @@
     
 
 <style>
-.section{
-  height: 700px;
-  background-color:red ;
-  z-index: 999;
-  padding: 1rem;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: lightslategray;
   text-align: center;
-  font-size: 1rem;
-
-}
-form{
-  border: 2px solid black;
-  border-radius: 30px; 
-  min-width: 40%;
-  margin-left: 100%;
-
-
-}
-input{
-  width: 30%;
 }
 
+
+form {
+  background-color: lightblue;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid #d0e7ff;
+}
+
+h2 {
+  color: darkblue;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  color: black;
+  font-weight: 500;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aacbee;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #0a58ca;
+  
+}
+button{
+  color: green ; 
+ 
+}
 
 
     

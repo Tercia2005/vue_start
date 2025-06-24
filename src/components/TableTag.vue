@@ -10,7 +10,9 @@
                             <button class="button1" @click="updateRequestStatus(t.id, 'Approved')">Approve</button>
                             <button class="button2"  @click="updateRequestStatus(t.id, 'Denied')">Deny</button>
                         </td>
+                    
     </tr>
+
     <tr v-else v-for="d,index in t.dates">
                 <td data-label="Employee">{{ t?.employeeName }}</td>
                 <td data-label="Number">{{ t?.employeeNum }}</td>
@@ -21,8 +23,12 @@
                             <button class="button1" @click="updateRequestStatus(index, 'Approved')">Approve</button>
                             <button class="button2" @click="updateRequestStatus(index, 'Denied')">Deny</button>
                         </td>
-    </tr>
+
+                        
+                        
+        </tr>
 </template>
+
 <script>
 export default {
     props:['t'],

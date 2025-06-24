@@ -8,6 +8,7 @@
                 <th>Reason</th>
                 <th>Status</th>
                 <th>Action</th>
+                
                
             </tr>
         </thead>
@@ -39,12 +40,14 @@ export default{
             dates : [{
                 dates:"2025-07-22",
                 reason:"Sick Leave",
-                status:"Pending"
+                status:"Pending",
+                comment: ""
             },
             {
                 dates:"2024-12-01",
                 reason:"Personal",
-                status:"Pending"
+                status:"Pending",
+                comment: ""
             }]
     
         },  
@@ -55,10 +58,14 @@ export default{
                 status : "Pending",
                 dates : "2025-07-15",
                 reason : "Family Responsibilty",
+                comment: ""
+                
+            
             },{
                 dates : "2024-12-02",
                 reason : "Vacation", 
-                status : "Pending"
+                status : "Pending",
+                comment: ""
             }
         ]
 
@@ -72,11 +79,13 @@ export default{
                 status : "Pending",
                 dates : "2025-07-10",
                 reason : "Medical Appointment",
+                comment: ""
 
             },{
                 dates : "2024-12-05",
                 reason : "Personal",
-                status : "Pending"
+                status : "Pending",
+                comment: ""
 
             }
     
@@ -90,6 +99,7 @@ export default{
             status : "Pending", 
             dates : "2025-07-20",
             reason : "Bereavement",
+            comment: ""
             
             
     
@@ -99,7 +109,8 @@ export default{
             employeeNum : 789456,
             status : "Pending",
             dates : "2024-12-01",
-            reason: "ChildCare"
+            reason: "ChildCare",
+            comment: ""
             
     
         },
@@ -109,6 +120,7 @@ export default{
             status : "Pending",
             dates : "2025-07-18",
             reason: "Sick Leave",
+            comment: ""
             
     
         },
@@ -117,7 +129,8 @@ export default{
             employeeNum : 258963,
             status : "Pending",
             dates : "2025-07-22",
-            reason : "Vacation"
+            reason : "Vacation",
+            comment: ""
 
             
     
@@ -128,6 +141,7 @@ export default{
             status : "Pending",
             dates: "2024-12-02",
             reason: "Medical Appointment",
+            comment: ""
 
             
     
@@ -138,6 +152,7 @@ export default{
             status : "Pending",
             dates: "2025-07-19",
             reason: "Childcare",
+            comment: ""
 
             
     
@@ -148,6 +163,7 @@ export default{
             status : "Pending",
             dates: "2024-12-03",
             reason: "Vacation",
+            comment: ""
 
             
     
@@ -180,7 +196,6 @@ tbody{
 
 .section{
   height: 700px;
-  background-color: ;
   z-index: 999;
 
 }
