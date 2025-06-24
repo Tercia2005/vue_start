@@ -13,6 +13,7 @@ import HRlist from '@/components/HRlist.vue';
 export default{
    components: {
     HRlist,
+  
 
    },
 

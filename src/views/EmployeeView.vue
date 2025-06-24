@@ -1,47 +1,68 @@
 <template >
+  <div class="section">
     <form>
         <h2>REQUEST FOR LEAVE</h2>
         <br>
 
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Employee number: </label>
-    <input type="email" class="form-control" id="inputEmail " aria-describedby="emailHelp">
+  <div class="mb-3 input" >
+    <label for="employeeNum" class="form-label">Employee number: </label>
+    <input type="text" class="form-control" id="employeeNum" aria-describedby="">
     
   </div>
-  <div class="mb-3">
+  <div class="mb-3 input">
     <br>
-    <label for="exampleInputPassword1" class="form-label" placeholder="">Password:</label>
-    <input type="password" class="form-control" id="inputPassword">
+    <label for="dateforleave" class="form-label" >Dates: </label>
+    <input type="date" class="date" id="dateforleave" placeholder="YY-MM-DD">
+    
     
 </div>
     <br>
-    <div class="mb-3">
-    <label for="typeleave" class="form-label" placeholder="">Type of leave: </label>
-    <input type="text" class="form-control" id="typeleave">
+    <div class="mb-3 input">
+    <label for="typeleave" class="form-label" placeholder="">Reason: </label>
+    <input type="text" class="form-control" id="typeleave" placeholder="">
+    <br><br>
+      
     </div>
-  <br><br>
+  <br>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+</div>
 
-    </template>
+</template>
 
-    <script>
+<script>
     
 
     export default{
       
     }
   
-    </script>
+</script>
     
 
 <style>
-section{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+.section{
+  height: 700px;
+  background-color:red ;
+  z-index: 999;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
 
-    background-color: blue;
+}
+form{
+  border: 2px solid black;
+  border-radius: 30px; 
+  min-width: 40%;
+  margin-left: 100%;
+
+
+}
+input{
+  width: 30%;
 }
 
+
+
     
-</style>
+  </style>
