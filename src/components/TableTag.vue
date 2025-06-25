@@ -8,7 +8,8 @@
                         <td data-label="Status">{{ t?.status }}</td>
                         <td data-label="Action">
                             <button class="button1" @click="updateRequestStatus(t.id, 'Approved')">Approve</button>
-                            <button class="button2"  @click="updateRequestStatus(t.id, 'Denied')">Deny</button>
+                            <button class="button2"  @click="updateRequestStatus(t.id,'Denied')">Deny</button>
+                           
                         </td>
                     
     </tr>
@@ -27,10 +28,16 @@
                         
                         
         </tr>
+        
 </template>
 
 <script>
 export default {
+    data(){
+        return{
+          
+        }
+    },
     props:['t'],
     methods:{
         updateRequestStatus(index, newStatus) {
@@ -39,6 +46,7 @@ export default {
             } else{
                 this.t.dates[index].status = newStatus
             }
+            
         },
     }
 }

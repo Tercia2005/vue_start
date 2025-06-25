@@ -38,13 +38,13 @@ export default{
             employeeName : "Sibongile Nkosi",
             employeeNum : 123456 ,
             dates : [{
-                dates:"2025-07-22",
+                dates:"22-07-2025",
                 reason:"Sick Leave",
                 status:"Pending",
                 comment: ""
             },
             {
-                dates:"2024-12-01",
+                dates:"01-12-2024",
                 reason:"Personal",
                 status:"Pending",
                 comment: ""
@@ -56,13 +56,13 @@ export default{
             employeeNum : 654321,
             dates: [{
                 status : "Pending",
-                dates : "2025-07-15",
+                dates : "15-07-2025",
                 reason : "Family Responsibilty",
                 comment: ""
                 
             
             },{
-                dates : "2024-12-02",
+                dates : "02-12-2024",
                 reason : "Vacation", 
                 status : "Pending",
                 comment: ""
@@ -77,12 +77,12 @@ export default{
             employeeNum : 147896,
             dates: [{
                 status : "Pending",
-                dates : "2025-07-10",
+                dates : "10-07-2025",
                 reason : "Medical Appointment",
                 comment: ""
 
             },{
-                dates : "2024-12-05",
+                dates : "05-12-2024",
                 reason : "Personal",
                 status : "Pending",
                 comment: ""
@@ -97,7 +97,7 @@ export default{
             employeeName : "Keshav Naidoo",
             employeeNum : 369871,
             status : "Pending", 
-            dates : "2025-07-20",
+            dates : "20-07-2025",
             reason : "Bereavement",
             comment: ""
             
@@ -108,7 +108,7 @@ export default{
             employeeName : "Zanele Khumalo",
             employeeNum : 789456,
             status : "Pending",
-            dates : "2024-12-01",
+            dates : "01-12-2024",
             reason: "ChildCare",
             comment: ""
             
@@ -118,7 +118,7 @@ export default{
             employeeName : "Sipho Zulu",
             employeeNum : 654987,
             status : "Pending",
-            dates : "2025-07-18",
+            dates : "18-07-2025",
             reason: "Sick Leave",
             comment: ""
             
@@ -128,7 +128,7 @@ export default{
             employeeName : "Naledi Moeketsi",
             employeeNum : 258963,
             status : "Pending",
-            dates : "2025-07-22",
+            dates : "22-07-2025",
             reason : "Vacation",
             comment: ""
 
@@ -139,7 +139,7 @@ export default{
             employeeName : "Farai Gumbo",
             employeeNum : 147852,
             status : "Pending",
-            dates: "2024-12-02",
+            dates: "02-12-2024",
             reason: "Medical Appointment",
             comment: ""
 
@@ -150,7 +150,7 @@ export default{
             employeeName : "Karabo Dlamini",
             employeeNum : 159632,
             status : "Pending",
-            dates: "2025-07-19",
+            dates: "19-07-2025",
             reason: "Childcare",
             comment: ""
 
@@ -161,7 +161,7 @@ export default{
             employeeName : "Fatima Patel",
             employeeNum : 357412,
             status : "Pending",
-            dates: "2024-12-03",
+            dates: "03-12-2024",
             reason: "Vacation",
             comment: ""
 

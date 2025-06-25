@@ -1,32 +1,40 @@
 <template >
   <div class="section">
-    <form>
-        <h2>REQUEST FOR LEAVE</h2>
+    <form @submit.prevent="handleSubmit">
+        <h2>LEAVE REQUEST</h2>
         <br>
+        
+        <div class="mb-3 input" >
+          <label for="employeeNum" class="form-label">Employee name: </label>
+          <input type="text" class="form-control" id="employeeName" aria-describedby="" v-model="EmpName">
+          
+        </div>
+        <div class="mb-3 input">
+          <br>
+          <label for="dateforleave" class="form-label" >Dates: </label>
+          <input type="date" class="date" id="dateforleave" placeholder="YY-MM-DD" v-model="EmpDate">
+          
+          
+        </div>
+        <br>
+        <div class="mb-3 input">
+          <label for="typeleave" class="form-label" placeholder="">Reason: </label>
+          <input type="text" class="form-control" id="typeleave" placeholder="" v-model="EmpReason" >
+          <br>
 
-  <div class="mb-3 input" >
-    <label for="employeeNum" class="form-label">Employee number: </label>
-    <input type="text" class="form-control" id="employeeNum" aria-describedby="">
-    
-  </div>
-  <div class="mb-3 input">
-    <br>
-    <label for="dateforleave" class="form-label" >Dates: </label>
-    <input type="text" class="text" id="dateforleave" placeholder="YY-MM-DD">
-    
-    
-</div>
-    <br>
-    <div class="mb-3 input">
-    <label for="typeleave" class="form-label" placeholder="">Reason: </label>
-    <input type="text" class="form-control" id="typeleave" placeholder="">
-    <br><br>
-      
-    </div>
-  <br>
-  <button type="submit" class="btn btn-primary">Submit</button>
+          <div v-if="error.length" class="alert alert-danger">
+        
+          <p v-for="(e,index) in error" :key="index">{{ e }}</p>
+        
+      </div>
+          
+        </div>
+        
+       <button type="submit" class="btn btn-primary">Submit</button>
+       <button type="button" class="mybtn" @click="handleLogout">Log out</button>
 </form>
 </div>
+
 
 </template>
 
@@ -34,74 +42,113 @@
     
 
     export default{
-      
+       data(){
+        return{
+          EmpName : '',
+          EmpDate : '',
+          EmpReason : '',
+          error : []
+          
+        }
+        },
+        methods: {
+          handleSubmit(){
+            this.error = [];
+
+            if (!this.EmpName){
+              this.error.push ('Please fill out employee number field!') 
+            }
+            if (!this.EmpDate) {
+              this.error.push ('Please fill out a date!')
+            }
+            if (!this.EmpReason) {
+              this.error.push ('Please provide reason!')
+            }
+            if (this.error.length === 0) {
+              alert ('Form submitted successfully! Thank you.');
+              
+              this.EmpName = '';
+              this.EmpDate = '';
+              this.EmpReason = '';
+            }
+          },
+          handleLogout(){
+            alert('You have been logged out.');
+
+            this.EmpName = '';
+            this.EmpDate = '';
+            this.EmpReason = '';
+            this.error = [];
+
+            this.$router.push('/')
+          }
+        }
+        
     }
+
+
   
 </script>
     
 
 <style>
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: lightslategray;
+.section{
+  height: 700px;
+ 
+  z-index: 999;
+  padding: 1rem;
   text-align: center;
-}
-
-
-form {
-  background-color: lightblue;
-  max-width: 400px;
-  margin: 50px auto;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border: 2px solid #d0e7ff;
-}
-
-h2 {
-  color: darkblue;
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  margin: 15px 0 5px;
-  color: black;
-  font-weight: 500;
-  text-align: left;
-}
-
-input[type="text"],
-input[type="date"],
-select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #aacbee;
-  border-radius: 8px;
-  box-sizing: border-box;
-  font-size: 14px;
-}
-
-input[type="submit"] {
-  margin-top: 20px;
-  padding: 10px 25px;
-  background-color: #0d6efd;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-input[type="submit"]:hover {
-  background-color: #0a58ca;
+  font-size: 1rem;
+  background-image: url("https://i.pinimg.com/736x/a4/57/02/a457023a1702efb0655b9bba3f7a4edc.jpg");
+  background-size: cover;         
+  background-position: center;         
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
   
 }
+form{
+  border: 2px solid black;
+  border-radius: 30px; 
+  max-width: 400px;
+  margin: 50px ;
+  margin-left: 35%;
+  border: 2px solid black;
+  border-radius: 20px; ;
+  padding: 30px;
+  background-color: white;
+
+}
 button{
-  color: green ; 
- 
+  color: green;
+  border-radius: 5px;
+  font-size: large;
+  padding: 4px 15px;
+  margin-top: 20px;
+
 }
 
+
+
+
+input{
+  width: 125px;
+  height: 23px;
+  border-radius: 5px;
+  font-size: medium;
+  
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: beige;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}  
+p{
+  color: red;
+}
 
     
   </style>

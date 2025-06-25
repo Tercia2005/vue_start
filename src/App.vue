@@ -1,5 +1,6 @@
 <template>
-  <NavbarComp/>
+  <NavbarComp/> 
+
 
   <router-view/>
 </template>
@@ -8,12 +9,17 @@ import NavbarComp from './components/NavbarComp.vue'
 export default{
   components: {
     NavbarComp
+},
+data(){
+  return{
+   
+  }
 }
 }
 </script>
 <style>
 #app {
-  font-family: arial;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
