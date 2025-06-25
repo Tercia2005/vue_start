@@ -18,6 +18,8 @@
              
         </tbody>
     </table>
+    
+    
 </template>
 
 <script>
@@ -36,7 +38,7 @@ export default{
 
         {  id : 1 ,  
             employeeName : "Sibongile Nkosi",
-            employeeNum : 123456 ,
+            employeeNum : "123456" ,
             dates : [{
                 dates:"22-07-2025",
                 reason:"Sick Leave",
@@ -53,7 +55,7 @@ export default{
         },  
         {  id : 2  ,
             employeeName : "Lungile Moyo" ,
-            employeeNum : 654321,
+            employeeNum : "654321",
             dates: [{
                 status : "Pending",
                 dates : "15-07-2025",
@@ -74,7 +76,7 @@ export default{
         },
         {  id : 3  ,
             employeeName : "Thabo Molefe",
-            employeeNum : 147896,
+            employeeNum : "147896",
             dates: [{
                 status : "Pending",
                 dates : "10-07-2025",
@@ -95,7 +97,7 @@ export default{
         },
         {   id : 4 ,
             employeeName : "Keshav Naidoo",
-            employeeNum : 369871,
+            employeeNum : "369871",
             status : "Pending", 
             dates : "20-07-2025",
             reason : "Bereavement",
@@ -106,7 +108,7 @@ export default{
         },
         {   id : 5 ,
             employeeName : "Zanele Khumalo",
-            employeeNum : 789456,
+            employeeNum : "789456",
             status : "Pending",
             dates : "01-12-2024",
             reason: "ChildCare",
@@ -116,7 +118,7 @@ export default{
         },
         {   id : 6 ,
             employeeName : "Sipho Zulu",
-            employeeNum : 654987,
+            employeeNum : "654987",
             status : "Pending",
             dates : "18-07-2025",
             reason: "Sick Leave",
@@ -126,7 +128,7 @@ export default{
         },
         {   id : 7 , 
             employeeName : "Naledi Moeketsi",
-            employeeNum : 258963,
+            employeeNum : "258963",
             status : "Pending",
             dates : "22-07-2025",
             reason : "Vacation",
@@ -137,7 +139,7 @@ export default{
         },
         {   id : 8  ,
             employeeName : "Farai Gumbo",
-            employeeNum : 147852,
+            employeeNum : "147852",
             status : "Pending",
             dates: "02-12-2024",
             reason: "Medical Appointment",
@@ -148,7 +150,7 @@ export default{
         },
         {   id : 9 ,
             employeeName : "Karabo Dlamini",
-            employeeNum : 159632,
+            employeeNum : "159632",
             status : "Pending",
             dates: "19-07-2025",
             reason: "Childcare",
@@ -159,7 +161,7 @@ export default{
         },
         {   id : 10 , 
             employeeName : "Fatima Patel",
-            employeeNum : 357412,
+            employeeNum : "357412",
             status : "Pending",
             dates: "03-12-2024",
             reason: "Vacation",

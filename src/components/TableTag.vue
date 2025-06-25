@@ -8,7 +8,7 @@
                         <td data-label="Status">{{ t?.status }}</td>
                         <td data-label="Action">
                             <button class="button1" @click="updateRequestStatus(t.id, 'Approved')">Approve</button>
-                            <button class="button2"  @click="updateRequestStatus(t.id,'Denied')">Deny</button>
+                            <button class="button2"  @click="openDenyModal(index)">Deny</button>
                            
                         </td>
                     
@@ -22,23 +22,35 @@
                         <td data-label="Status">{{ d?.status }}</td>
                         <td data-label="Action">
                             <button class="button1" @click="updateRequestStatus(index, 'Approved')">Approve</button>
-                            <button class="button2" @click="updateRequestStatus(index, 'Denied')">Deny</button>
+                            <button class="button2" @click="openDenyModal(index)">Deny</button>
                         </td>
 
                         
                         
         </tr>
-        
-</template>
+        <div v-if="showModal" class="modal">
+        <h3>Enter reason for denial</h3>
+    <input v-model="hrcom" type="text" >
+    <button @click="submitDenyComment">Confirm Denial</button>
+    <button @click="showModal=true">Cancel</button>
+
+</div>
+
+    </template>
+    
+    
 
 <script>
+import { Modal } from 'bootstrap';
+
+
 export default {
     data(){
         return{
-          
         }
     },
     props:['t'],
+    name: 'MyModal',
     methods:{
         updateRequestStatus(index, newStatus) {
             if (this.t.status) {
@@ -48,6 +60,11 @@ export default {
             }
             
         },
+        showModal(){
+            const modalElement = this.$refs.modal;
+            const modalInstance = new Modal(modalElement);
+            modalInstance.show();
+        }
     }
 }
 </script>
