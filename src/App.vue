@@ -1,13 +1,16 @@
 <template>
-  
+  <aside id: styling >
+
     <NavbarComp/> 
     
     
     <router-view/>
+  </aside>
   
 </template>
 <script>
 import NavbarComp from './components/NavbarComp.vue'
+
 export default{
   components: {
     NavbarComp
