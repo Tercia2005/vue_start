@@ -1,8 +1,10 @@
 <template>
-  <NavbarComp/> 
-
-
-  <router-view/>
+  
+    <NavbarComp/> 
+    
+    
+    <router-view/>
+  
 </template>
 <script>
 import NavbarComp from './components/NavbarComp.vue'
@@ -14,10 +16,16 @@ data(){
   return{
    
   }
-}
+}, 
+methods:{
+  
+},
+
 }
 </script>
 <style>
+
+
 #app {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;

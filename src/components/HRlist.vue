@@ -43,13 +43,13 @@ export default{
                 dates:"22-07-2025",
                 reason:"Sick Leave",
                 status:"Pending",
-                comment: ""
+                
             },
             {
                 dates:"01-12-2024",
                 reason:"Personal",
                 status:"Pending",
-                comment: ""
+               
             }]
     
         },  
@@ -60,14 +60,14 @@ export default{
                 status : "Pending",
                 dates : "15-07-2025",
                 reason : "Family Responsibilty",
-                comment: ""
+                
                 
             
             },{
                 dates : "02-12-2024",
                 reason : "Vacation", 
                 status : "Pending",
-                comment: ""
+                
             }
         ]
 
@@ -81,13 +81,13 @@ export default{
                 status : "Pending",
                 dates : "10-07-2025",
                 reason : "Medical Appointment",
-                comment: ""
+               
 
             },{
                 dates : "05-12-2024",
                 reason : "Personal",
                 status : "Pending",
-                comment: ""
+                
 
             }
     
@@ -101,7 +101,7 @@ export default{
             status : "Pending", 
             dates : "20-07-2025",
             reason : "Bereavement",
-            comment: ""
+            
             
             
     
@@ -112,7 +112,7 @@ export default{
             status : "Pending",
             dates : "01-12-2024",
             reason: "ChildCare",
-            comment: ""
+            
             
     
         },
@@ -122,7 +122,7 @@ export default{
             status : "Pending",
             dates : "18-07-2025",
             reason: "Sick Leave",
-            comment: ""
+            
             
     
         },
@@ -132,7 +132,7 @@ export default{
             status : "Pending",
             dates : "22-07-2025",
             reason : "Vacation",
-            comment: ""
+            
 
             
     
@@ -143,7 +143,7 @@ export default{
             status : "Pending",
             dates: "02-12-2024",
             reason: "Medical Appointment",
-            comment: ""
+            
 
             
     
@@ -154,7 +154,7 @@ export default{
             status : "Pending",
             dates: "19-07-2025",
             reason: "Childcare",
-            comment: ""
+           
 
             
     
@@ -165,7 +165,7 @@ export default{
             status : "Pending",
             dates: "03-12-2024",
             reason: "Vacation",
-            comment: ""
+           
 
             
     

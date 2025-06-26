@@ -99,13 +99,7 @@
   padding: 1rem;
   text-align: center;
   font-size: 1rem;
-  background-image: url("https://i.pinimg.com/736x/a4/57/02/a457023a1702efb0655b9bba3f7a4edc.jpg");
-  background-size: cover;         
-  background-position: center;         
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  
+
 }
 form{
   border: 2px solid black;
