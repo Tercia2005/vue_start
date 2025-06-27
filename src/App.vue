@@ -1,5 +1,5 @@
 <template>
-  <aside id: styling >
+  <aside :id="styling" >
 
     <NavbarComp/> 
     
@@ -15,19 +15,35 @@ export default{
   components: {
     NavbarComp
 },
-data(){
+data(){ 
   return{
-   
+   styling:""
   }
-}, 
-methods:{
-  
+},  
+methods:{ 
+  changeBackground(){ 
+    if(this.$route.path == '/employee'){
+      this.styling = "background" 
+    } else{
+      this.styling = "" 
+    }
+  }
 },
+watch:{
+  $route(newValue){
+    this.changeBackground()
+  }
+},
+mounted(){
+  this.changeBackground()  
+}
 
 }
 </script>
 <style>
-
+#background{
+  background: url("https://www.shutterstock.com/shutterstock/photos/2286554497/display_1500/stock-photo-random-pictures-cute-and-funny-2286554497.jpg");
+}
 
 #app {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

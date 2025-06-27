@@ -21,7 +21,7 @@
           <label for="typeleave" class="form-label" placeholder="">Reason: </label>
           <select v-model="EmpReason" required>
             <option disabled value="">Please select a reason</option>
-            <option>Sick Leave</option>
+            <option >Sick Leave</option>
             <option>Personal</option>
             <option>Family Responsibilty</option>
             <option>Vacation</option>
